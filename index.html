@@ -213,7 +213,7 @@
                                 var chartInstance = this.chart,
                                 
                                 ctx = chartInstance.ctx;
-                                ctx.font = Chart.helpers.fontString(Chart.fontSize="10", Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
+                                ctx.font = Chart.helpers.fontString(Chart.fontSize="9", Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
                                 ctx.textAlign = 'center';
                                 ctx.textBaseline = 'center';
                                 this.data.datasets.forEach(function (dataset, i)
@@ -241,7 +241,7 @@
                 gridLines: {
                 color: "rgba(0, 0, 0, 0)",
             },
-                barThickness : 11,
+                barThickness : 13,
                 ticks: {
                   
                   fontSize:14,
