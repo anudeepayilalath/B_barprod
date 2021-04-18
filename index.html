@@ -119,6 +119,16 @@
           
           labels: ["Payments", "Accounts", "Identity (KYC and authentication)", "Multiple functionality", "Credit scoring/loan pre-approvals", "Bank products/ATM Locations", "Credit Cards", "Trading", "Data Products", "FX", "Loyality/rewards", "Other" ],
           datasets: [
+
+
+          {
+              label: "Q1",
+              backgroundColor:[
+                  "#ffd23f"
+              ]
+            },
+
+           
             {
               label: "Q1",
               
@@ -166,20 +176,13 @@
               borderWidth: 0,
             },
 
-            {
-              label: "Q1",
-              backgroundColor:[
-                  "#ffd23f"
-              ]
-            },
-
+            
             {
               label: "Q4",
               backgroundColor:[
                   "#ffe799"
               ]
-            }
-
+            },
 
             
            
@@ -201,6 +204,8 @@
             //padding:'5'
         },
           legend:{
+            position: "top",
+            align: "end",
            display:true,
            "labels": {
                 "fontSize": 12,
@@ -213,7 +218,7 @@
                                 var chartInstance = this.chart,
                                 
                                 ctx = chartInstance.ctx;
-                                ctx.font = Chart.helpers.fontString(Chart.fontSize="9", Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
+                                ctx.font = Chart.helpers.fontString(Chart.fontSize="10", Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
                                 ctx.textAlign = 'center';
                                 ctx.textBaseline = 'center';
                                 this.data.datasets.forEach(function (dataset, i)
@@ -224,7 +229,7 @@
                                         var data = dataset.data[index];
                                        
                                         
-                                        data > 0 ? ctx.fillText(data, bar._model.x + 11, bar._model.y - -1) : ''
+                                        data > 0 ? ctx.fillText(data, bar._model.x + 14, bar._model.y - -2) : ''
                                     });
                                 });
                             }
@@ -235,7 +240,8 @@
                 
                 scaleLabel: {
                 display: true,
-                labelString: 'Product category'
+                labelString: 'Product category',
+                marginRight:"2%"
               },
                 
                 gridLines: {
