@@ -218,7 +218,7 @@
                                 var chartInstance = this.chart,
                                 
                                 ctx = chartInstance.ctx;
-                                ctx.font = Chart.helpers.fontString(Chart.fontSize="10", Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
+                                ctx.font = Chart.helpers.fontString(Chart.fontSize="11", Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
                                 ctx.textAlign = 'center';
                                 ctx.textBaseline = 'center';
                                 this.data.datasets.forEach(function (dataset, i)
@@ -229,7 +229,7 @@
                                         var data = dataset.data[index];
                                        
                                         
-                                        data > 0 ? ctx.fillText(data, bar._model.x + 14, bar._model.y - -1) : ''
+                                        data > 0 ? ctx.fillText(data, bar._model.x + 14, bar._model.y - -2) : ''
                                     });
                                 });
                             }
