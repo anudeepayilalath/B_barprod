@@ -120,6 +120,14 @@
           labels: ["Payments", "Accounts", "Identity (KYC and authorization)", "Multiple functionality", "Bank products/ATM Locations", "Credit scoring/loan pre-approvals", "Trading", "Data products", "Credit cards", "FX", "Loyalty/rewards", "Other"],
           datasets: [
 
+          {
+              label: "",
+              backgroundColor:[
+                  "white"
+              ]
+            },
+
+
 
           {
               label: "",
@@ -148,7 +156,7 @@
                 "#a385e0",
                 "#ffd23f",
                 "#a385e0",
-                "#ffd23f",
+                
                 "#a385e0",
                 "#ffd23f",
                 "#ffd23f",
@@ -156,6 +164,7 @@
                 "#ffd23f",
                 "#ffd23f",
                 "#ffd23f",
+                "#808080",
               ],
               borderWidth: 0,
             },
@@ -170,7 +179,6 @@
                 "#cbbaed",
                 "#ffe799",
                 "#cbbaed",
-                "#ffe799",
                 "#cbbaed",
                 "#ffe799",
                 "#ffe799",
@@ -178,6 +186,7 @@
                 "#ffe799",
                 "#ffe799",
                 "#ffe799",
+                "#B2B2B2",
               ],
               borderWidth: 0,
             },
@@ -197,7 +206,12 @@
               ]
             },
 
-           
+            {
+              label: "Other APIs",
+              backgroundColor:[
+                  "#B2B2B2"
+              ]
+            },
 
             
            
@@ -244,7 +258,7 @@
                                         var data = dataset.data[index];
                                        
                                         
-                                        data > 0 ? ctx.fillText(data, bar._model.x + 14, bar._model.y - -2) : ''
+                                        data > 0 ? ctx.fillText(data, bar._model.x + 14, bar._model.y - -1) : ''
                                     });
                                 });
                             }
